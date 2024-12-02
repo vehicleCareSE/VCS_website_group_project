@@ -1,0 +1,593 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #5d6e80;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+
+form {
+    
+    max-width: 400px;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 30px;
+    opacity: 0.7;
+
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 23px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.main-border {
+    width: fit-content;
+    margin: auto;
+    margin-top: 60px;
+    padding: 20px;
+    padding-top: 0;
+    border: 1px solid rgb(163, 241, 255);
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(206, 249, 252, 0.6);
+    /*box-shadow: 10px 10px rgba(147, 178, 180, 0.6); */
+}
+
+#text {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+
+#a-button {
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: #0056b3;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+#h2-custom {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.img-background {
+    background-image: url("imgbg1.png");
+    background-size: cover; /* Make the image cover the entire screen */
+    background-position: center; /* Center the image */
+    background-attachment: fixed;
+}
+
+
+/*-------------------------------- footer section ----------------------------------------------------------------*/
+body .footer {
+    background-color: #2c3e50 !important; /* Force the background color */
+}
+
+
+.footer {
+    background-color: #885c5c; /* Set your desired background color */
+    color: #ecf0f1; /* Text color for contrast */
+    padding: 30px 20px; /* Spacing around the footer */
+    text-align: center; /* Center-align the text */
+    font-family: Arial, sans-serif; /* Font */
+}
+
+
+/* Social Media Section */
+.footer-section.social {
+    margin: 15px 0;
+}
+
+.footer-section.social h3 {
+    color: #f39c12; /* Orange color for the heading */
+    font-size: 20px; /* Font size for the heading */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduce spacing between icons */
+}
+
+
+.social-icons a img {
+    width: 20px; /* Reduce the icon width */
+    height: 20px; /* Reduce the icon height */
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    margin-top: 20px; /* Space above the bottom text */
+    font-size: 14px; /* Font size for the copyright text */
+    color: #bdc3c7; /* Light grey text */
+}
+
+.footer-bottom a {
+    color: #f39c12; /* Link color in the bottom section */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+/*----------------------------------------------------home page-----------------------------------------------------------------------*/
+.menu-bar {
+    background-color: #885c5c; /* Background color of the menu bar */
+    /*overflow: hidden;*/ /* Ensure content fits inside */
+    padding-top: 0;
+    padding-bottom: 0px; /* Vertical spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow for effect */
+}
+
+/* Menu Bar - List */
+.menu-bar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the menu items */
+    overflow: hidden;
+}
+
+/* Menu Bar - List Items */
+.menu-bar ul li {
+    padding: 0; /* Spacing between menu items */
+    display: inline-block;
+}
+
+/* Menu Bar - Links */
+.menu-bar ul li a {
+    text-decoration: none; /* Remove underline */
+    display: block;
+    text-align: center;
+    color: white; /* Text color */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    padding: 8px 50px; /* Add spacing inside the link */
+    transition: background 0.3s ease; /* Smooth background hover effect */
+}
+
+/* Hover Effect */
+.menu-bar ul li a:hover {
+    background-color: #583d3d; /* Darker blue on hover */
+    color: #fff; /* Ensure text remains white */
+}
+
+/* Page Content */
+.content {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.content h1 {
+    color: #333;
+    font-size: 56px;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    text-shadow: 2px 2px 5px yellow;
+}
+
+.content p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    height: 30%;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-shadow: 2px 2px 5px yellow;
+}
+
+/* Favorite Icon */
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-icon:before {
+    content: '★';
+    font-size: 18px;
+    color: #ccc; /* Default grey color */
+    transition: color 0.3s ease;
+}
+
+.favorite-icon.active:before {
+    color: yellow; /* Yellow color when active */
+}
+
+.favorite-icon:hover {
+    background-color: #f0f0f0;
+}
+
+/*------------------------- Profile page--------------------------------------------------------------------------------*/
+
+.profile-details {
+    text-align: center;
+    width: 40%; /* Set width to 60% of the viewport */
+    margin: 20px auto;
+    padding: 10px; /* Add consistent padding */
+    background-color: #ccc;
+    border-radius: 20px;
+    opacity: 0.9;
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+}
+
+.profile-details h2 {
+    font-size: 50px;
+    color: #333;
+    text-shadow: 2px 2px 5px yellow;
+    margin-bottom: 15px;
+}
+
+.profile-details form {
+    width: 100%; /* Ensure form takes full width */
+}
+
+.profile-details p {
+    margin-top: 15px;
+    display: flex; /* Flexbox to align label and input on the same line */
+    align-items: center; /* Vertically align label and input */
+    margin-bottom: 8px; /* Reduce space between rows */
+}
+
+.profile-details label {
+    font-weight: bold;
+    font-size: 18px; /* Adjust label font size */
+    flex: 1; /* Allow label to take up some space */
+    text-align: right; /* Right-align the label */
+    margin-right: 10px; /* Add small spacing between label and input */
+}
+
+.profile-details input {
+    flex: 2; /* Make input field take up the remaining space */
+    padding: 8px; /* Add some padding */
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.profile-details button {
+    width: 50%;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.profile-details button#save-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.profile-details button#edit-button {
+    background-color: #8d6055;
+    color: white;
+}
+
+/* Success Message Styling */
+.success-message {
+    color: green;
+    font-size: 25px; /* Decreased font size */
+    text-align: center; /* Center-align the message text */
+    margin: 10px auto; /* Center alignment within the container */
+    display: block; /* Ensures the message behaves like a block element */
+    width: 55%; /* Takes full width of its parent */
+}
+
+/* Error Message Styling */
+.error-message {
+    color: red;
+    font-size: 25px; /* Decreased font size */
+    text-align: center; /* Center-align the message text */
+    margin: 10px auto; /* Center alignment within the container */
+    display: block; /* Ensures the message behaves like a block element */
+    width: 55%; /* Takes full width of its parent */
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form button[style*="background-color: #f39c12;"] {
+    background-color: #f39c12;
+}
+
+form button[style*="background-color: #f39c12;"]:hover {
+    background-color: #d35400;
+}
+
+/*------------------- Q&A--------------------------------------*/
+
+/* General Styles */
+.q-a, textarea, button, h2, h3, h4, p, small, .answers, .question-meta {
+    font-size: 20px !important; /* Force font size with !important */
+}
+
+/* Forum Container */
+.forum-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styles */
+.card2 {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px; /* Set font size for all card content */
+}
+
+.card2 h2, .card2 h3, .card2 h4 {
+    margin-bottom: 10px;
+    font-size: 20px; /* Set font size for headers */
+}
+
+/* Add Discussion Form */
+.add-discussion textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 20px; /* Set font size for text input */
+}
+
+.add-discussion button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Set font size for buttons */
+    width: auto;
+}
+
+.add-discussion button:hover {
+    background-color: #0056b3;
+}
+
+/* Discussion and Answers */
+.discussion h3 {
+    color: #007bff;
+    margin-bottom: 5px;
+    font-size: 20px; /* Set font size for question headers */
+}
+
+.question-meta {
+    font-size: 20px; /* Set font size for metadata */
+    color: #666;
+}
+
+.question-meta .user {
+    color: #333;
+    font-weight: bold;
+}
+
+.question-meta .date {
+    font-style: italic;
+}
+
+/* Answers */
+.answers {
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 20px; /* Set font size for answers */
+}
+
+.answers h4 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px; /* Set font size for "Answers" header */
+}
+
+.answer {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    font-size: 20px; /* Set font size for answer content */
+}
+
+.answer strong {
+    color: #007bff;
+}
+
+.answer small {
+    display: block;
+    font-size: 20px; /* Set font size for small metadata text */
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Add Answer Form */
+.add-answer textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 20px; /* Set font size for answer input */
+}
+
+.add-answer button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px; /* Set font size for buttons */
+    width: auto;
+}
+
+.add-answer button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .forum-container {
+        width: 95%;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .add-discussion button, .add-answer button {
+        width: 100%;
+    }
+}
+
+
+.delete-question {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+

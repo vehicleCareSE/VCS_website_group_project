@@ -153,7 +153,7 @@ body .footer {
 
 /*----------------------------------------------------home page-----------------------------------------------------------------------*/
 .menu-bar {
-    background-color: #ffffff; /* Background color of the menu bar */
+    background-color: #885c5c; /* Background color of the menu bar */
     /*overflow: hidden;*/ /* Ensure content fits inside */
     padding-top: 0;
     padding-bottom: 0px; /* Vertical spacing */
@@ -190,7 +190,7 @@ body .footer {
 
 /* Hover Effect */
 .menu-bar ul li a:hover {
-    background-color: #ffffff; /* Darker blue on hover */
+    background-color: #583d3d; /* Darker blue on hover */
     color: #fff; /* Ensure text remains white */
 }
 

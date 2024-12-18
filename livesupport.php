@@ -138,10 +138,127 @@ function generateBotResponse($message) {
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        font-size: 14px; /* Base font size */
+    }
+    .img-background {
+        background: url('background.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+    /* Menu Bar */
+    .menu-bar {
+        background-color:rgb(97, 214, 166);
+        color: #fff;
+        padding: 8px 0;
+        text-align: center;
+        font-size: 14px; /* Smaller menu font */
+    }
+    .menu-bar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-bar li {
+        display: inline;
+        margin: 0 10px;
+    }
+    .menu-bar a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    /* Chat Container */
+    .chat-container {
+    background-color: #fff;
+    width: 500px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    font-size: 14px;
+    height: 650px; /* Increased height */
+    margin-left: auto; /* Align to the right */
+    margin-right: 20px;  /* Align to the right */
+}
+    .custom-h2 {
+        text-align: center;
+        color: #3398db;
+        font-size: 18px; /* Smaller header font */
+        margin-bottom: 10px;
+    }
+    .chat-history {
+        border: 1px solid #ddd;
+        padding: 8px;
+        height: 430px;
+        overflow-y: scroll;
+        background-color: #fafafa;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        font-size: 13px; /* Smaller font for chat messages */
+    }
+    .user-message {
+        background-color:rgb(51, 219, 146);
+        color: #fff;
+        border-radius: 10px;
+        padding: 6px;
+        margin: 5px 0px;
+        text-align: right;
+        font-size: 13px;
+    }
+    .bot-response {
+        background-color: #e0e0e0;
+        color: #333;
+        border-radius: 10px;
+        padding: 6px;
+        margin: 5px 0;
+        text-align: left;
+        font-size: 13px;
+    }
+    .chat-form input {
+        width: 75%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    .chat-form button {
+        background-color:rgb(51, 219, 146);
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .success-message, .error-message {
+        text-align: center;
+        font-size: 12px;
+        color: green;
+    }
+    .error-message {
+        color: red;
+    }
+    .img-background {
+            background-image: url("Untitled-2.png");
+            background-size: cover;
+            /* Make the image cover the entire screen */
+            background-position: center;
+            /* Center the image */
+            background-attachment: fixed;
+        }
+</style>
 </head>
 <body class="img-background">
     <!-- Menu Bar -->
@@ -179,5 +296,24 @@ function generateBotResponse($message) {
             <button type="submit">Send</button>
         </form>
     </div>
+
+    <!-- Confirm Logout Script -->
+    <script>
+    // Scroll to the bottom of the chat history to show the latest message
+    window.onload = function() {
+        var chatHistory = document.querySelector('.chat-history');
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+    };
+
+    // Ensure it scrolls to the bottom when new messages are added
+    document.querySelector('.chat-form').addEventListener('submit', function() {
+        setTimeout(function() {
+            var chatHistory = document.querySelector('.chat-history');
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }, 100); // Slight delay to wait for the message to load
+    });
+</script>
 </body>
+
+
 </html>

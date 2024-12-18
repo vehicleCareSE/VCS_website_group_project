@@ -62,11 +62,75 @@ function generateBotResponse($message) {
 
     // Simple predefined responses
     $responses = [
+        // General Greetings and Assistance
         "hello" => "Hi there! How can I assist you today?",
         "how are you" => "I'm just a bot, but I'm here to help!",
-        "services" => "We provide vehicle repair, maintenance, and cleaning services.",
+        "what is your name" => "I'm your Vehicle Care Assistant Bot!",
         "bye" => "Goodbye! Have a great day!",
+        "thank you" => "You're welcome! Let me know if you need more help.",
+        "help" => "Sure! Let me know your issue or question about vehicles.",
+    
+        // Vehicle Maintenance Questions
+        "what are common maintenance tips" => "Check oil levels, tire pressure, brake condition, and ensure regular servicing.",
+        "how often should I change my car oil" => "It's recommended every 5,000–7,500 miles for modern engines.",
+        "how to check tire pressure" => "Use a tire pressure gauge to ensure it matches the recommended PSI in your vehicle manual.",
+        "why is my engine overheating" => "Check for low coolant levels, a faulty radiator, or a broken water pump.",
+        "what is the purpose of coolant" => "Coolant prevents your engine from overheating or freezing and reduces corrosion.",
+        "how to clean car headlights" => "Use a mixture of toothpaste and water or a headlight restoration kit.",
+        "when should I replace my car battery" => "Replace it every 3–5 years or if it shows signs of failure like difficulty starting.",
+        "how to check brake pads" => "Look for wear indicators on the pads or unusual squeaking or grinding noises.",
+        "how to prevent rust on a car" => "Wash regularly, wax your car, and apply rust-proof coatings.",
+        "what is a timing belt" => "It synchronizes the rotation of the engine's crankshaft and camshaft to ensure proper timing.",
+    
+        // Vehicle Issues and Solutions
+        "why is my car making a squealing noise" => "It could be a worn-out belt or brake issue. Have it inspected soon.",
+        "why does my car pull to one side" => "Check wheel alignment or tire pressure. Uneven wear could also be the cause.",
+        "why is my car vibrating" => "Common reasons include unbalanced tires, engine misfires, or a damaged axle.",
+        "why is there a burning smell in my car" => "This may be due to oil leakage, overheated brakes, or clutch issues.",
+        "what causes a car to lose power" => "Faulty fuel injectors, a clogged air filter, or a bad spark plug are common causes.",
+        "why won't my car start" => "The battery, alternator, starter motor, or fuel system might be at fault.",
+        "what does the check engine light mean" => "It indicates a problem with the engine or emissions system. Have it scanned for codes.",
+        "why is my car leaking fluid" => "It could be oil, coolant, brake fluid, or transmission fluid. Identify the color of the leak for diagnosis.",
+        "what causes tire blowouts" => "Over-inflation, under-inflation, or hitting sharp objects like nails can cause blowouts.",
+        "how to fix a flat tire" => "Use a spare tire or a repair kit temporarily, then have it repaired at a service center.",
+    
+        // Specific Vehicle Services
+        "do you offer oil changes" => "Yes, we offer professional oil change services.",
+        "do you provide vehicle cleaning" => "Yes, we provide both interior and exterior cleaning services.",
+        "can I book a repair appointment online" => "Yes, you can book through our website or app.",
+        "what is the cost of brake repair" => "It varies by vehicle. We provide free diagnostics before quoting a price.",
+        "do you offer emergency roadside assistance" => "Yes, we have a 24/7 roadside assistance service.",
+        "do you handle engine problems" => "Yes, our experts can diagnose and repair engine issues.",
+        "do you offer tire alignment services" => "Yes, we provide tire alignment and balancing services.",
+        "do you perform vehicle inspections" => "Yes, we perform comprehensive vehicle inspections.",
+        "can you install accessories" => "Yes, we install accessories like cameras, sensors, and more.",
+        "what are your service hours" => "We are open from 8 AM to 8 PM daily.",
+    
+        // Random Questions about Vehicle Care
+        "what are some fuel-saving tips" => "Avoid rapid acceleration, maintain proper tire pressure, and reduce excess weight.",
+        "why does my car have low mileage" => "Driving habits, poor maintenance, and low tire pressure can affect mileage.",
+        "how to fix a car that won't start in the cold" => "Check the battery, use a block heater, and ensure you have winter-grade oil.",
+        "why is my steering wheel shaking" => "Unbalanced tires or worn-out suspension components could be the issue.",
+        "how to clean car seats" => "Use a vacuum and upholstery cleaner for fabric seats or leather cleaner for leather seats.",
+        "what are common brake problems" => "Squealing, grinding, or reduced braking power often indicate worn-out pads or rotors.",
+        "why is my fuel gauge not working" => "The issue could be with the fuel sending unit or the gauge itself.",
+        "how to jump-start a car" => "Connect jumper cables to a working car battery and follow the correct sequence of connections.",
+        "how to tell if my tires need replacement" => "Look for low tread depth (less than 2/32 inch) or uneven wear patterns.",
+        "why is my car stalling" => "A dirty throttle body, bad fuel pump, or ignition issues are common causes.",
+    
+        // Vehicle-related Emergencies
+        "what to do if my car overheats" => "Turn off the AC, turn on the heater, and stop the car safely to check coolant levels.",
+        "what to do after a car accident" => "Ensure safety, contact authorities, exchange information, and inform your insurance provider.",
+        "how to prevent engine failure" => "Perform regular maintenance, check oil levels, and replace air and fuel filters as needed.",
+        "what to do if brakes fail" => "Shift to a lower gear, use the parking brake, and safely steer off the road.",
+        "why is my car shaking at high speeds" => "This could indicate unbalanced tires or alignment issues.",
+        "how to deal with a tire blowout" => "Hold the steering wheel firmly, slow down gradually, and pull over safely.",
+        "what is hydroplaning" => "It's when tires lose traction on wet surfaces. Avoid sudden movements and drive slowly in rain.",
+        "how to handle skidding" => "Steer into the skid and avoid braking suddenly to regain control.",
+        "what to do if my key is stuck in the ignition" => "Ensure the car is in park and try turning the steering wheel gently to release it.",
+        "what to do if my headlights go out" => "Use your parking lights or hazards to signal other drivers and pull over safely.",
     ];
+    
 
     // Default response
     return $responses[$message] ?? "I'm sorry, I didn't understand that. Can you rephrase?";

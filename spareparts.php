@@ -78,5 +78,6 @@ $result = $conn->query($sql);
 </html>
 
 <?php
-$conn->close();
+
 ?>
+

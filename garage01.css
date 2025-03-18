@@ -1,0 +1,419 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Buttons */
+.add-vehicle-btn,
+.add-vehicle-btn01 {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.add-vehicle-btn:hover,
+.add-vehicle-btn01:hover {
+    background-color: #45a049;
+}
+
+.add-vehicle-btn:active,
+.add-vehicle-btn01:active {
+    transform: scale(0.98);
+}
+
+.viwe-similar-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #3498db;
+    color: white;
+}
+
+/* Vehicle Bar */
+.vehicle-bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-bar:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Vehicle Details */
+.vehicle-details {
+    display: none;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.vehicle-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.vehicle-details th,
+.vehicle-details td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.vehicle-details th {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+}
+
+.vehicle-details td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Popup Styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 60px;
+    max-width: 450px;
+    width: 100%;
+    z-index: 1001;
+    display: none;
+    animation: popupAnimation 0.3s ease-out;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.popup-header span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.popup-header .close-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    color: #888;
+}
+
+.popup-header .close-btn:hover {
+    color: #333;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Card Styles */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -15px;
+    padding: 10px;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Zoom effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    margin-left: 20%; /* Adjust this value to move the image further right */
+}
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+    background: linear-gradient(to right, #073b00, #001e0a);
+    height: 30%;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* Menu Bar */
+.menu-bar {
+    background: #fff;
+    color: #333;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.138);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.menu-bar a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-bar a:hover {
+    background-color: rgb(6, 55, 10);
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo_img {
+    position: fixed;
+    top: -60px;
+    right: 1400px;
+    padding: 15px;
+    width: 10%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+}
+
+/* Animations */
+@keyframes popupAnimation {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+.action-buttons {
+    white-space: nowrap;
+    padding: 5px !important;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.view-similar-btn, .edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.view-similar-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Ensure forms don't break the layout */
+.action-buttons form {
+    margin: 0;
+    padding: 0;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.popup input, .popup select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.popup button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vehicle-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f5f5f5;
+}
